@@ -35,7 +35,7 @@ tanto 'I.txt' quanto 'D.txt' indicam quem vai rodar o programa
 	congelando o app enquanto as mensagens não fossem enviadas
 
 	rodando (II) independentemente faz o linux alocar
-	processamentos diferentes pros dois scripts, então nenhum
+	processos diferentes pros dois scripts, então nenhum
 	congela o outro
 
 ++++++                             main (I)                             ++++++
