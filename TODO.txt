@@ -1,0 +1,104 @@
+substituí round cents por round,2 em listview
+
+
+
+
+
+***** revisar sistema de backup ******
+
+* contabilidade, valor preso != valor investido
+
+* fazer id_venda independente da abertura e fechamento do codigo
+	* medir a partir do tamanho do historico?
+
+* round error historico total
+
+* fazer contabilidade diária para conferir melhor
+* e histórico
+
+toda vez que entra em contabilidade e preços a tabela é recarregada
+	* carregar uma vez só e guardar
+
+* transformar caixa do dia em label
+
+
+********* prioridades *********
+* consertar todos os prints, alguns aparecem 0.0 outros só 0
+	padronizar
+
+* consertar fato de que se algum script quebra, os arquivos de _running.txt não sao excluídos
+
+* rever nomes das funções
+* rever nomes das variaveis (_atual == _total)
+*******************************
+
+********* melhorias *********
+* tirar uppercase de douglas e ito
+
+* precisa de return_info em atualiza_registro?
+
+* opção de transitar para pagina de compra para pagina de admin e vice versa
+
+* analisar aonde eu preciso de round_cents e aonde eu nao preciso
+
+*** SQL ***
+	* decidir oq fazer com .txt em carrega_historico_individual, ultimo_historico e ordena_historico
+	* historico: mostrar dia a dia mais informaçoes tipo qnt de vendas, valor total etc
+	* aumentar a quantidade de informações anotadas
+***********
+
+* carreagar preços em login.py e usar direto em contabilidade(self)
+* pra evitar fazer conta do preço e evitar possivel erro de arredondamento
+
+* sistema de backup
+
+* label dizendo se ta com internet ou nao
+
+* pagina em admin pra preferencias do ususario
+	* escolher entre abrir resized ou maximized
+
+* melhorar o log do sem internet
+
+* mudar nome de todos os botoes, labels, etc
+
+* autocomplete lineEdit words (admin page)
+
+* analisar rounds e floats erros - influencia negativamente em algo?
+
+* se nao tiver venda no dia, ainda aparece nos historicos individuais
+	o dia vazio, mas nao aparece no historico geral
+	mudar para nao aparecer em nada, ou aparecer em tudo?
+
+* quando o usuario erra uma ou mais coisas, só precisa aparecer uma messagebox
+	ou aparece logo as duas pra ele saber tudo q fez de errado?
+
+* em historico geral, passar o mouse por cima pra ver de quem foi a compra ou outra
+	alternativa?
+
+* substituir todas as messagebox por uis personalizadas
+
+* o display ser em 3 listas diferentes é um problema?
+	* se ultrapassar a qnt que cabe sem precisar de scroll
+	* os 3 scrolls vao ser independentes
+	* criar dependencia entre eles, ou fazer o display em table
+
+* nomes das variaveis no front end em portugues e no back end em ingles
+
+* arquitetar um esquema de debug melhor
+	print(f'{currentframe().f_back.f_lineno}: ' + item)
+	https://duckduckgo.com/?t=ffab&q=python+logging&ia=web
+
+* main.bat é necessário?
+*****************************
+
+*** v3 ****
+
+* pagina com grafico de cada material
+	historico/lucro/preços antigos...
+
+***********
+
+++ design ++
+
+frameshape no frame
+https://www.youtube.com/c/WandersonIsMe/playlists

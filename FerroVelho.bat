@@ -1,0 +1,1 @@
+python3 "/home/jw/FerroVelho/scripts/login.py"
